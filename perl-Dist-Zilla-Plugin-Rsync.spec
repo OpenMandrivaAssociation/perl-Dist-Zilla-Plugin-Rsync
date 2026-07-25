@@ -2,14 +2,14 @@
 %define upstream_version 0.1
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Dist::Zilla plugin to upload using rsync
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Dist-Zilla-Plugin-Rsync
+Source0:	https://cpan.metacpan.org/authors/id/Z/ZO/ZOUL/Dist-Zilla-Plugin-Rsync-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(CLASS)
