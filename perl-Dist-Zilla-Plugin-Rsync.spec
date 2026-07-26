@@ -1,15 +1,13 @@
 %define upstream_name    Dist-Zilla-Plugin-Rsync
-%define upstream_version 0.1
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.1
+Release:	7
 
 Summary:	Dist::Zilla plugin to upload using rsync
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Dist-Zilla-Plugin-Rsync
-Source0:	https://cpan.metacpan.org/authors/id/Z/ZO/ZOUL/Dist-Zilla-Plugin-Rsync-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/Z/ZO/ZOUL/Dist-Zilla-Plugin-Rsync-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(CLASS)
@@ -23,7 +21,7 @@ BuildArch:	noarch
 The 'where' config key is required. The 'options' default to '-e ssh'.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
